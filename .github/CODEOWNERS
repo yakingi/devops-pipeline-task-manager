@@ -1,0 +1,35 @@
+# DevOps Pipeline Task Manager - Code Owners
+# These owners will be requested for review when PRs modify matching files
+
+# Default owners for everything in the repo
+* @dianegit @yakingi @nwpuu @Nyarubisi
+
+# Infrastructure code - Infrastructure Engineer Lead
+/terraform/ @nwpuu
+*.tf @nwpuu
+
+# Configuration management - Configuration Manager Lead
+/ansible/ @Nyarubisi
+*.yml @Nyarubisi
+*.yaml @Nyarubisi
+
+# CI/CD pipelines - DevOps Engineer Lead
+/.github/workflows/ @dianegit
+.github/ @dianegit
+
+# Security configurations - Security Engineer Lead
+/security/ @yakingi
+*security* @yakingi
+
+# Application code - All team members
+/frontend/ @dianegit @yakingi @nwpuu @Nyarubisi
+/backend/ @dianegit @yakingi @nwpuu @Nyarubisi
+
+# Docker configurations
+Dockerfile @dianegit
+docker-compose.yml @dianegit
+.dockerignore @dianegit
+
+# Documentation
+/docs/ @dianegit @yakingi @nwpuu @Nyarubisi
+*.md @dianegit @yakingi @nwpuu @Nyarubisi

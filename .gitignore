@@ -137,3 +137,61 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform-outputs.json
+
+# Ansible
+*.retry
+.vault_pass
+.ansible/
+ansible.log
+*.vault
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Azure
+.azure/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets and credentials
+*.pem
+*.key
+!*.pub
+credentials.json
+secrets.yaml
+secrets.yml
+
+# Backup files
+*.bak
+*.backup
+
+# Test artifacts
+test-results/
+playwright-report/
